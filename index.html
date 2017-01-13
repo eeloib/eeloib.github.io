@@ -12,15 +12,15 @@
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="576px" width="768px"></canvas>
     <script type='text/javascript'>
   var Module = {
-    TOTAL_MEMORY: 134217728,
+    TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     backgroundColor: "#222C36",
     splashStyle: "Light",
-    dataUrl: "Release/Build.data",
-    codeUrl: "Release/Build.js",
-    asmUrl: "Release/Build.asm.js",
-    memUrl: "Release/Build.mem",
+    dataUrl: "Release/webGL.data",
+    codeUrl: "Release/webGL.js",
+    asmUrl: "Release/webGL.asm.js",
+    memUrl: "Release/webGL.mem",
   };
 </script>
 <script src="Release/UnityLoader.js"></script>
