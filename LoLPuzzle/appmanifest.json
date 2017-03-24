@@ -1,9 +1,9 @@
 ﻿{
-	"name": "Tutorial_Puzzle_2b",
-	"short_name": "Tutorial_Puzzle_2b",
+	"name": "LoLPuzzle",
+	"short_name": "LoLPuzzle",
 	"start_url": "index.html",
 	"display": "fullscreen",
-	"orientation": "any",
+	"orientation": "landscape",
 	"icons": [{
 		"src": "icon-16.png",
 		"sizes": "16x16",
