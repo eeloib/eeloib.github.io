@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491751367,
+	"version": 1491768162,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -8,8 +8,6 @@
 		"images/spr_wall-sheet0.png",
 		"images/spr_wall-sheet1.png",
 		"images/spr_background-sheet0.png",
-		"images/spr_background-sheet1.png",
-		"images/spr_background-sheet2.png",
 		"images/spr_antifill-sheet0.png",
 		"images/spr_qix-sheet0.png",
 		"images/spr_borderfill-sheet0.png",
@@ -19,6 +17,7 @@
 		"images/spr_enemy-sheet0.png",
 		"images/spr_win-sheet0.png",
 		"images/spr_calculating-sheet0.png",
+		"images/spr_backgroundwin-sheet0.png",
 		"images/btdown-sheet0.png",
 		"images/btleft-sheet0.png",
 		"images/btright-sheet0.png",
