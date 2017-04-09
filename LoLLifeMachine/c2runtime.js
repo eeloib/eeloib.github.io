@@ -23627,6 +23627,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.AnimationFrameCount,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Sprite.prototype.acts.SetAnim,
+	cr.plugins_.Mouse.prototype.cnds.OnObjectClicked,
 	cr.system_object.prototype.cnds.CompareBetween,
 	cr.system_object.prototype.exps.loadingprogress,
 	cr.plugins_.LoLMain.prototype.acts.SendLoadingProgress,
