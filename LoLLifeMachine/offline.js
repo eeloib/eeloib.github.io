@@ -1,9 +1,5 @@
 ﻿{
-<<<<<<< HEAD
-	"version": 1491802692,
-=======
-	"version": 1491770468,
->>>>>>> origin/master
+	"version": 1491832127,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -16,20 +12,14 @@
 		"images/spr_qix-sheet0.png",
 		"images/spr_borderfill-sheet0.png",
 		"images/spr_explode-sheet0.png",
-<<<<<<< HEAD
 		"images/spr_explode-sheet1.png",
-=======
->>>>>>> origin/master
 		"images/spr_title-sheet0.png",
 		"images/spr_debugmarker-sheet0.png",
 		"images/spr_enemy-sheet0.png",
 		"images/spr_win-sheet0.png",
 		"images/spr_calculating-sheet0.png",
 		"images/spr_backgroundwin-sheet0.png",
-<<<<<<< HEAD
 		"images/spr_backgroundwin-sheet1.png",
-=======
->>>>>>> origin/master
 		"images/btdown-sheet0.png",
 		"images/btleft-sheet0.png",
 		"images/btright-sheet0.png",
