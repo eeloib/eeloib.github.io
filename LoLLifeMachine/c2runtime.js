@@ -23536,12 +23536,21 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
 	cr.plugins_.Function,
 	cr.plugins_.Keyboard,
+<<<<<<< HEAD
 	cr.plugins_.LoLMain,
 	cr.plugins_.Mouse,
 	cr.plugins_.Text,
 	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
+=======
+	cr.plugins_.Mouse,
+	cr.plugins_.Sprite,
+	cr.plugins_.Text,
+	cr.plugins_.TiledBg,
+	cr.plugins_.Touch,
+	cr.plugins_.LoLMain,
+>>>>>>> origin/master
 	cr.behaviors.solid,
 	cr.behaviors.Bullet,
 	cr.behaviors.Rex_pushOutSolid,
@@ -23562,7 +23571,11 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Width,
 	cr.plugins_.Sprite.prototype.exps.Height,
 	cr.behaviors.Bullet.prototype.acts.SetAngleOfMotion,
+<<<<<<< HEAD
 	cr.plugins_.Audio.prototype.acts.Play,
+=======
+	cr.plugins_.Text.prototype.acts.SetText,
+>>>>>>> origin/master
 	cr.system_object.prototype.cnds.For,
 	cr.plugins_.Function.prototype.acts.CallFunction,
 	cr.system_object.prototype.exps.loopindex,
@@ -23580,16 +23593,24 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Opacity,
 	cr.system_object.prototype.cnds.PickAll,
 	cr.plugins_.Sprite.prototype.exps.PickedCount,
+<<<<<<< HEAD
 	cr.plugins_.Text.prototype.acts.SetText,
 	cr.system_object.prototype.exps.zeropad,
 	cr.system_object.prototype.acts.SetTimescale,
 	cr.plugins_.Text.prototype.acts.SetVisible,
+=======
+	cr.system_object.prototype.exps.zeropad,
+	cr.system_object.prototype.acts.SetTimescale,
+>>>>>>> origin/master
 	cr.plugins_.Keyboard.prototype.cnds.OnAnyKey,
 	cr.system_object.prototype.acts.GoToLayout,
 	cr.system_object.prototype.acts.ResetGlobals,
 	cr.system_object.prototype.acts.RestartLayout,
+<<<<<<< HEAD
 	cr.plugins_.Mouse.prototype.cnds.OnAnyClick,
 	cr.plugins_.Touch.prototype.cnds.OnTouchStart,
+=======
+>>>>>>> origin/master
 	cr.system_object.prototype.cnds.Every,
 	cr.system_object.prototype.acts.AddVar,
 	cr.plugins_.Keyboard.prototype.cnds.IsKeyDown,
@@ -23599,6 +23620,10 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Y,
 	cr.plugins_.Sprite.prototype.cnds.IsBoolInstanceVarSet,
 	cr.plugins_.Sprite.prototype.acts.SetY,
+<<<<<<< HEAD
+=======
+	cr.plugins_.Audio.prototype.acts.Play,
+>>>>>>> origin/master
 	cr.plugins_.Sprite.prototype.cnds.CompareX,
 	cr.plugins_.Sprite.prototype.acts.SetX,
 	cr.plugins_.Sprite.prototype.acts.SetEffectParam,
@@ -23627,7 +23652,10 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr.prototype.acts.Pop,
 	cr.plugins_.Touch.prototype.cnds.IsTouchingObject,
 	cr.plugins_.LoLMain.prototype.acts.SubmitProgress,
+<<<<<<< HEAD
 	cr.plugins_.Sprite.prototype.acts.StopAnim,
+=======
+>>>>>>> origin/master
 	cr.plugins_.Sprite.prototype.exps.AnimationFrameCount,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Sprite.prototype.acts.SetAnim,
@@ -23638,6 +23666,12 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.OnLoadFinished,
 	cr.plugins_.LoLMain.prototype.acts.SendInit,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
+<<<<<<< HEAD
 	cr.plugins_.LoLMain.prototype.acts.CompleteGame
+=======
+	cr.plugins_.LoLMain.prototype.acts.CompleteGame,
+	cr.plugins_.Mouse.prototype.cnds.OnAnyClick,
+	cr.plugins_.Touch.prototype.cnds.OnTouchStart
+>>>>>>> origin/master
 ];};
 
