@@ -5,6 +5,8 @@ const handleSubmit = (event)=>{
     event.preventDefault();
     fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
         method: 'POST',
+        mode: 'cors',
+        redirect: 'follow',
         headers: {
             'Content-Type': 'text/plain;charset=utf-8',
             'Access-Control-Allow-Origin':"*"
