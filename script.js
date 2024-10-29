@@ -10,6 +10,7 @@ const handleSubmit = (event)=>{
         redirect: 'follow',
         headers: {
             'Content-Type': 'text/plain;charset=utf-8',
+            'Access-Control-Allow-Origin':"*"
         },
         body: JSON.stringify({
                 "Nome": nome.value,
