@@ -23,7 +23,7 @@ const handleSubmit = (event)=>{
                 'LinkQrCode':""
             })
         }).then(response => {
-            console.log("success:", response);
+            alert("success:", response);
         });
 }
 
