@@ -26,7 +26,7 @@ const handleSubmit = (event)=>{
 }
 
 function handleCredentialResponse(response) {
-    const data = jwt_decode(response.credential)
+    const data = jwt-decode(response.credential)
     console.log(data)  
   }
   window.onload = function () {
