@@ -1,5 +1,5 @@
 
-import * as jwt_decode from 'jwt-decode';
+    import * as jwt_decode from 'jwt-decode';
       
       function handleCredentialResponse(response) {
         const data = jwt_decode(response.credential);
@@ -24,7 +24,6 @@ import * as jwt_decode from 'jwt-decode';
         );
         google.accounts.id.prompt(); // also display the One Tap dialog
       }
-
 
 const handleSubmit = (event)=>{
     event.preventDefault();
