@@ -1,6 +1,4 @@
 
-
-
 const handleSubmit = (event)=>{
     event.preventDefault();
     fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
