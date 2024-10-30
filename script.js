@@ -1,6 +1,4 @@
 
-
-
 const handleSubmit = (event)=>{
     event.preventDefault();
     fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
@@ -23,8 +21,7 @@ const handleSubmit = (event)=>{
                 'LinkQrCode':""
             })
         }).then(response => {
-            alert("success:", response);
+            console.log("success:", response);
         });
 }
-
 document.querySelector('form').addEventListener('submit',handleSubmit);
