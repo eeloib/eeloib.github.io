@@ -1,4 +1,4 @@
-
+Email = "";
 
 const handleSubmit = (event)=>{
     event.preventDefault();
@@ -12,7 +12,7 @@ const handleSubmit = (event)=>{
         body: JSON.stringify({
                 "Nome": nome.value,
                 "Telefone": telefone.value,
-                "Email": email.value,
+                "Email": email,
                 "Placa":placa.value,
                 'CPF':cpf.value,
                 'DataNascimento':dataNascimento.value,
@@ -38,6 +38,7 @@ function parseJwt (token) {
   
   function handleCredentialResponse(response) {
     const data = parseJwt(response.credential);
+    Email=data.email;
     console.log(data)  
   }
   window.onload = function () {
