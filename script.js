@@ -19,7 +19,7 @@ function parseJwt (token) {
   }
   window.onload = function () {
     google.accounts.id.initialize({
-      client_id: mango,
+      client_id: "512160770236-16n573eolsvjjmoflkl5hlaku9ha22pe.apps.googleusercontent.com",
       callback: handleCredentialResponse
     });
     google.accounts.id.renderButton(
