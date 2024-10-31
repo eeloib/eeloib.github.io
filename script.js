@@ -12,7 +12,7 @@ const handleSubmit = (event)=>{
         body: JSON.stringify({
                 "Nome": nome.value,
                 "Telefone": telefone.value,
-                "Email": Email.value,
+                "Email": email.value,
                 "Placa":placa.value,
                 'CPF':cpf.value,
                 'DataNascimento':dataNascimento.value,
@@ -58,7 +58,7 @@ function parseJwt (token) {
         width: "400" 
       }  // customization attributes
     );
-    google.accounts.id.prompt(); // also display the One Tap dialog
+    //google.accounts.id.prompt(); // also display the One Tap dialog
   }
 
 
