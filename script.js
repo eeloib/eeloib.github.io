@@ -49,13 +49,13 @@ function parseJwt (token) {
         body: JSON.stringify({
                 "Nome": nome.value,
                 "Telefone": telefone.value,
-                "Email": emailGoogle,
+                "Email": email.value,
                 "Placa":placa.value,
                 'CPF':cpf.value,
                 'DataNascimento':dataNascimento.value,
                 'Cidade':cidade.value,
                 'Estado':estado.value,
-                'LinkZap':'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+emailGoogle,
+                'LinkZap':'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+email.value,
                 'LinkQrCode':""
             })
         }).then(response => {
