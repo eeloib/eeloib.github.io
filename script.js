@@ -12,7 +12,7 @@ const handleSubmit = (event)=>{
         body: JSON.stringify({
                 "Nome": nome.value,
                 "Telefone": telefone.value,
-                "Email": Email,
+                "Email": Email.value,
                 "Placa":placa.value,
                 'CPF':cpf.value,
                 'DataNascimento':dataNascimento.value,
