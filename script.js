@@ -1,4 +1,4 @@
-const Email = "";
+let emailGoogle = "";
 
 function parseJwt (token) {
     var base64Url = token.split('.')[1];
@@ -13,8 +13,8 @@ function parseJwt (token) {
   function handleCredentialResponse(response) {
     const data = JSON.parse(parseJwt(response.credential));
     
-    Email=data.email;
-    console.log(Email)  
+    emailGoogle=data.email;
+    console.log(emailGoogle)  
   }
   window.onload = function () {
     google.accounts.id.initialize({
@@ -48,13 +48,13 @@ function parseJwt (token) {
         body: JSON.stringify({
                 "Nome": nome.value,
                 "Telefone": telefone.value,
-                "Email": Email,
+                "Email": emailGoogle,
                 "Placa":placa.value,
                 'CPF':cpf.value,
                 'DataNascimento':dataNascimento.value,
                 'Cidade':cidade.value,
                 'Estado':estado.value,
-                'LinkZap':'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+Email,
+                'LinkZap':'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+emailGoogle,
                 'LinkQrCode':""
             })
         }).then(response => {
