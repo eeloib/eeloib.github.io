@@ -1,4 +1,4 @@
-let Email = "";
+const Email = "";
 
 function parseJwt (token) {
     var base64Url = token.split('.')[1];
