@@ -39,7 +39,7 @@ function parseJwt (token) {
   function handleCredentialResponse(response) {
     const data = parseJwt(response.credential);
     Email=data.email;
-    console.log(data)  
+    console.log(Email)  
   }
   window.onload = function () {
     google.accounts.id.initialize({
