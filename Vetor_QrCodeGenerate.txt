@@ -1,0 +1,119 @@
+link
+link
+
+
+
+POST
+/api/v2/qr/link/create
+
+
+Generation a QR code based on the settings specified in the request.
+
+Parameters
+No parameters
+
+Request body
+
+application/json
+{
+  "qrFieldsData": {
+    "link": "https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20eliasbraga@cobrape.com.br"
+  },
+  "title": "Qr Code",
+  "format": "png",
+  "qrOptions": {
+    "size": 300,
+    "errorCorrectionLevel": "Q",
+    "pattern": "square",
+    "patternColor": "#000000",
+    "patternBackground": "#ffffff",
+    "cornetsOuter": "square",
+    "cornetsOuterColor": "#000000",
+    "cornetsInterior": "square",
+    "cornetsInteriorColor": "#000000",
+    "logotype": null,
+    "logotypeSize": 0.3,
+    "logotypeMargin": 0,
+    "logotypeHideBackground": true,
+    "gradientPattern": null,
+    "gradientCornetsOuter": null,
+    "gradientCornetsInterior": null,
+    "gradientBackground": null
+  },
+  "qrFrame": {
+    "name": "noFrame",
+    "color": "#000000",
+    "backgroundColor": "#ffffff",
+    "text": "",
+    "textColor": "#9C3AAF",
+    "textFont": "Roboto"
+  }
+}
+Responses
+Curl
+
+curl -X 'POST' \
+  'https://me-qr.com/api/v2/qr/link/create' \
+  -H 'accept: */*' \
+  -H 'X-AUTH-TOKEN: ddc0055f9867fd203653660f954858cf497a86caa72577aae95b921f84a7c56c' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "qrFieldsData": {
+    "link": "https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20eliasbraga@cobrape.com.br"
+  },
+  "title": "Qr Code",
+  "format": "png",
+  "qrOptions": {
+    "size": 300,
+    "errorCorrectionLevel": "Q",
+    "pattern": "square",
+    "patternColor": "#000000",
+    "patternBackground": "#ffffff",
+    "cornetsOuter": "square",
+    "cornetsOuterColor": "#000000",
+    "cornetsInterior": "square",
+    "cornetsInteriorColor": "#000000",
+    "logotype": null,
+    "logotypeSize": 0.3,
+    "logotypeMargin": 0,
+    "logotypeHideBackground": true,
+    "gradientPattern": null,
+    "gradientCornetsOuter": null,
+    "gradientCornetsInterior": null,
+    "gradientBackground": null
+  },
+  "qrFrame": {
+    "name": "noFrame",
+    "color": "#000000",
+    "backgroundColor": "#ffffff",
+    "text": "",
+    "textColor": "#9C3AAF",
+    "textFont": "Roboto"
+  }
+}'
+Request URL
+https://me-qr.com/api/v2/qr/link/create
+Server response
+Code	Details
+200	
+Response body
+
+Response headers
+ alt-svc: h3=":443"; ma=86400 
+ cache-control: max-age=0,must-revalidate,no-cache,no-store,private 
+ cf-cache-status: DYNAMIC 
+ cf-ray: 8db42f3d0a56df4d-GIG 
+ content-type: image/png 
+ date: Thu,31 Oct 2024 14:02:45 GMT 
+ expires: Thu,31 Oct 2024 14:02:45 GMT 
+ nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800} 
+ report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3THKqg7uwm%2BOE6f4VWLdmlWpAdF%2BsOOifUrI3cyCUD%2FBm0czLYviW5JcK1kEvztSl1tjXxd9WTm4oPvjxR5HQNRJNvtQJQVjcD2CbVfx9a7whjdtrrvcaVSyvV8%3D"}],"group":"cf-nel","max_age":604800} 
+ server: cloudflare 
+ server-timing: cfL4;desc="?proto=TCP&rtt=32883&sent=791&recv=501&lost=0&retrans=0&sent_bytes=773649&recv_bytes=138616&delivery_rate=16355696&cwnd=618&unsent_bytes=0&cid=5ea597c211e4f6f1&ts=357028&x=0" 
+ vary: User-Agent 
+ x-content-type-options: nosniff 
+ x-frame-options: SAMEORIGIN 
+Responses
+Code	Description	Links
+default	
+No links
