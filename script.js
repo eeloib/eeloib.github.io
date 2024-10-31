@@ -58,7 +58,7 @@ function parseJwt (token) {
         width: "400" 
       }  // customization attributes
     );
-    //google.accounts.id.prompt(); // also display the One Tap dialog
+    google.accounts.id.prompt(); // also display the One Tap dialog
   }
 
 
