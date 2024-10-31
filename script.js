@@ -11,7 +11,7 @@ function parseJwt (token) {
   }
   
   function handleCredentialResponse(response) {
-    const data = JSON.parse(parseJwt(response.credential));
+    const data = parseJwt(response.credential);
     
     emailGoogle=data.email;
     console.log(emailGoogle)  
