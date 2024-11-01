@@ -46,7 +46,7 @@ function parseJwt (token) {
       method: 'POST',
       headers: {
         'accept': '*/*',
-        'X-AUTH-TOKEN': 'chave',
+        'X-AUTH-TOKEN': 'ddc0055f9867fd203653660f954858cf497a86caa72577aae95b921f84a7c56c',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
@@ -54,7 +54,7 @@ function parseJwt (token) {
           "link": 'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+email.value
         },
         "title": "Qr Code",
-        "format": "png",
+        "format": "json",
         "qrOptions": {
           "size": 300,
           "errorCorrectionLevel": "Q",
