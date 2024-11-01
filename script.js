@@ -84,7 +84,7 @@ function parseJwt (token) {
         }
       })
     }).then(response => {
-      data = response;
+      data = response.json();
       console.log("Qr:",data);
       linkQrCode = data.body.qrUrl;
     });    
