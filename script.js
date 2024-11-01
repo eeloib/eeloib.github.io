@@ -47,7 +47,7 @@ const handleSubmit = (event)=>{
       method: 'POST',
       headers: {
         'accept': '*/*',
-        'X-AUTH-TOKEN': 'ddc0055f9867fd203653660f954858cf497a86caa72577aae95b921f84a7c56c',
+        'X-AUTH-TOKEN': '',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
