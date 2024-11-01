@@ -1,4 +1,5 @@
 emailGoogle = "";
+idGoogle = "";
 
 function parseJwt (token) {
     var base64Url = token.split('.')[1];
@@ -14,7 +15,8 @@ function parseJwt (token) {
     const data = parseJwt(response.credential);
     
     emailGoogle=data.email;
-    console.log(emailGoogle);
+    idGoogle = "";
+    console.log(data);
     email.value = emailGoogle;  
   }
   window.onload = function () {
