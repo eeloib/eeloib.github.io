@@ -49,6 +49,7 @@ function parseJwt (token) {
             'Content-Type': 'text/plain;charset=utf-8'
         },
         body: JSON.stringify({
+                "id": idGoogle,
                 "Nome": nome.value,
                 "Telefone": telefone.value,
                 "Email": email.value,
