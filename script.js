@@ -12,15 +12,16 @@ function parseJwt (token) {
     return JSON.parse(jsonPayload);
   }
   
-  function handleCredentialResponse(response) {
+function handleCredentialResponse(response) {
     const data = parseJwt(response.credential);
     
     emailGoogle=data.email;
     idGoogle = data.sub;
     console.log(data);
     email.value = emailGoogle;  
-  }
-  window.onload = function () {
+}
+
+window.onload = function () {
     google.accounts.id.initialize({
       client_id: "512160770236-16n573eolsvjjmoflkl5hlaku9ha22pe.apps.googleusercontent.com",
       callback: handleCredentialResponse
@@ -38,15 +39,15 @@ function parseJwt (token) {
       }  // customization attributes
     );
     google.accounts.id.prompt(); // also display the One Tap dialog
-  }
+}
 
-  const handleSubmit = (event)=>{
+const handleSubmit = (event)=>{
     event.preventDefault();
     fetch('https://me-qr.com/api/v2/qr/link/create',{
       method: 'POST',
       headers: {
         'accept': '*/*',
-        'X-AUTH-TOKEN': 'ddc0055f9867fd203653660f954858cf497a86caa72577aae95b921f84a7c56c',
+        'X-AUTH-TOKEN': '',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
@@ -112,10 +113,7 @@ function parseJwt (token) {
         }).then(response => {
             console.log("success:", response);
         });
-
     });    
-    
-    
 }
 
 
