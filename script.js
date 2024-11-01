@@ -15,7 +15,7 @@ function parseJwt (token) {
     const data = parseJwt(response.credential);
     
     emailGoogle=data.email;
-    idGoogle = "";
+    idGoogle = data.sub;
     console.log(data);
     email.value = emailGoogle;  
   }
