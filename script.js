@@ -47,7 +47,7 @@ const handleSubmit = (event)=>{
       method: 'POST',
       headers: {
         'accept': '*/*',
-        'X-AUTH-TOKEN': '',
+        'X-AUTH-TOKEN': 'ddc0055f9867fd203653660f954858cf497a86caa72577aae95b921f84a7c56c',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
@@ -84,8 +84,7 @@ const handleSubmit = (event)=>{
           "textFont": "Roboto"
         }
       })
-    }).then(response => {
-      data = response.json();
+    }).then(function (response){return response.json();}).then(function(data) {
       console.log("Qr:",data);
       linkQrCode = data.qrUrl;
       console.log("link Qr Code: ",linkQrCode);
@@ -113,7 +112,7 @@ const handleSubmit = (event)=>{
         }).then(response => {
             console.log("success:", response);
         });
-    });    
+    });   
 }
 
 
