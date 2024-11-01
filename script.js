@@ -87,9 +87,9 @@ function parseJwt (token) {
       data = response.json();
       console.log("Qr:",data);
       linkQrCode = data.qrUrl;
-    });    
-    
-    fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
+      console.log("link Qr Code: ",linkQrCode);
+
+      fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
         method: 'POST',
         mode: 'no-cors',
         redirect: 'follow',
@@ -112,6 +112,10 @@ function parseJwt (token) {
         }).then(response => {
             console.log("success:", response);
         });
+
+    });    
+    
+    
 }
 
 
