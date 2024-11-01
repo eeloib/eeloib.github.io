@@ -84,8 +84,9 @@ function parseJwt (token) {
         }
       })
     }).then(response => {
-      console.log("Qr:",response);
-      linkQrCode = response.data.qrUrl;
+      data = JSON.parse(response);
+      console.log("Qr:",data);
+      linkQrCode = data.qrUrl;
     });    
     
     fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
