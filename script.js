@@ -1,5 +1,6 @@
 emailGoogle = "";
 idGoogle = "";
+linkQrCode = "";
 
 function parseJwt (token) {
     var base64Url = token.split('.')[1];
@@ -41,7 +42,6 @@ function parseJwt (token) {
 
   const handleSubmit = (event)=>{
     event.preventDefault();
-    linkQrCode = "";
     fetch('https://me-qr.com/api/v2/qr/link/create',{
       method: 'POST',
       headers: {
