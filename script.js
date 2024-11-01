@@ -41,6 +41,53 @@ function parseJwt (token) {
 
   const handleSubmit = (event)=>{
     event.preventDefault();
+    linkQrCode = "";
+    fetch('https://me-qr.com/api/v2/qr/link/create',{
+      method: 'POST',
+      headers: {
+        'accept': '*/*',
+        'X-AUTH-TOKEN': 'ddc0055f9867fd203653660f954858cf497a86caa72577aae95b921f84a7c56c',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "qrFieldsData": {
+          "link": 'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+email.value
+        },
+        "title": "Qr Code",
+        "format": "png",
+        "qrOptions": {
+          "size": 300,
+          "errorCorrectionLevel": "Q",
+          "pattern": "square",
+          "patternColor": "#000000",
+          "patternBackground": "#ffffff",
+          "cornetsOuter": "square",
+          "cornetsOuterColor": "#000000",
+          "cornetsInterior": "square",
+          "cornetsInteriorColor": "#000000",
+          "logotype": null,
+          "logotypeSize": 0.3,
+          "logotypeMargin": 0,
+          "logotypeHideBackground": true,
+          "gradientPattern": null,
+          "gradientCornetsOuter": null,
+          "gradientCornetsInterior": null,
+          "gradientBackground": null
+        },
+        "qrFrame": {
+          "name": "noFrame",
+          "color": "#000000",
+          "backgroundColor": "#ffffff",
+          "text": "",
+          "textColor": "#9C3AAF",
+          "textFont": "Roboto"
+        }
+      })
+    }).then(response => {
+      console.log("Qr:",response);
+      linkQrCode = response.data.QrUrl;
+    });    
+    
     fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
         method: 'POST',
         mode: 'no-cors',
@@ -59,7 +106,7 @@ function parseJwt (token) {
                 'Cidade':cidade.value,
                 'Estado':estado.value,
                 'LinkZap':'https://wa.me/5521972360828?text=Quero%20me%20cadastrar%20o%20email%20do%20motorista%20é%20'+email.value,
-                'LinkQrCode':""
+                'LinkQrCode':linkQrCode
             })
         }).then(response => {
             console.log("success:", response);
