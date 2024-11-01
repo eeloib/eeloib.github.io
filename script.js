@@ -86,7 +86,7 @@ function parseJwt (token) {
     }).then(response => {
       data = response.json();
       console.log("Qr:",data);
-      linkQrCode = data.body.qrUrl;
+      linkQrCode = data.qrUrl;
     });    
     
     fetch('https://script.google.com/macros/s/AKfycbxWRBwMEBilng8eIjFzDdykiIqGsseyQcilo4NwhKTM7EiT82A3PUCEfMv5scYVuEAE/exec',{
