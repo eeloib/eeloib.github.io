@@ -67,7 +67,7 @@ const handleSubmit = (event)=>{
           "cornetsInterior": "square",
           "cornetsInteriorColor": "#000000",
           "logotype": null,
-          "logotypeSize": 0.3,
+          "logotypeSize": 0.7,
           "logotypeMargin": 0,
           "logotypeHideBackground": true,
           "gradientPattern": null,
@@ -79,7 +79,7 @@ const handleSubmit = (event)=>{
           "name": "noFrame",
           "color": "#000000",
           "backgroundColor": "#ffffff",
-          "text": "",
+          "text": "Vetor Experience",
           "textColor": "#9C3AAF",
           "textFont": "Roboto"
         }
